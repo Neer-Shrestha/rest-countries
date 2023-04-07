@@ -1,0 +1,46 @@
+:root {
+    --transition: all 0.3s ease-in-out;
+}
+
+html,
+body {
+    font-size: 1rem;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    transition: var(--transition);
+}
+figure {
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.btn-back {
+    display: inline-flex;
+    gap: 20px;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: 7px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    color: #000;
+}
+
+.screen-reader-text {
+    display: none;
+}
